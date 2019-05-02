@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-react-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoviDeCroock/Vanilla-React-Application.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoviDeCroock/Vanilla-React-Application/issues"
+  },
+  "homepage": "https://github.com/JoviDeCroock/Vanilla-React-Application#readme",
+  "devDependencies": {
+    "servor": "2.2.1"
+  }
+}
