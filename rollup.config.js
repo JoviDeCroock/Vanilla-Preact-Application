@@ -1,7 +1,8 @@
-import urlResolve from './node_modules/rollup-plugin-url-resolve/esm/rollup-plugin-url-resolve';
+import urlResolve from 'rollup-plugin-url-resolve';
 import { terser } from 'rollup-plugin-terser';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
+import gzipPlugin from "rollup-plugin-gzip";
 
 export default {
   input: 'src/index.js',
@@ -21,5 +22,6 @@ export default {
       exclude: /^https:\/\/unpkg\.com.*?\?.*?\bmodule\b/
     }),
     terser(),
+    gzipPlugin(),
   ]
 }

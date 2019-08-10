@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "servor",
-    "build": "rollup -c"
+    "build": "rimraf dist && rollup -c"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,14 @@
   },
   "homepage": "https://github.com/JoviDeCroock/Vanilla-React-Application#readme",
   "devDependencies": {
+    "rimraf": "^2.6.3",
+    "rollup": "1.19.4",
+    "rollup-plugin-commonjs": "10.0.2",
+    "rollup-plugin-gzip": "^2.2.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "5.1.1",
+    "rollup-plugin-url-resolve": "0.1.1",
     "servor": "2.2.1"
   },
-  "dependencies": {
-    "rollup": "^1.15.6",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-node-resolve": "^5.0.2",
-    "rollup-plugin-terser": "^5.0.0",
-    "rollup-plugin-url-resolve": "^0.1.0"
-  }
+  "dependencies": {}
 }
