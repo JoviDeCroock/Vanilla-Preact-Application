@@ -1,3 +1,4 @@
+import { useState } from 'https://unpkg.com/preact@10.0.0/hooks/dist/hooks.module.js?module';
 import { styled } from '../_common/styled.js';
 
 const Text = styled('p')`
@@ -5,6 +6,9 @@ const Text = styled('p')`
   margin: 0;
 `;
 
-export default () => html`
-  <${Text}>Hello world!</${Text}>
-`;
+export default () => {
+  const [state] = useState('Hello world!');
+  return html`
+    <${Text}>{state}</${Text}>
+  `
+};
