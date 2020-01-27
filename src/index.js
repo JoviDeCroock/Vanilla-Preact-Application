@@ -6,8 +6,6 @@ window.html = htm.bind(h);
 window.h = h;
 window.Component = Component;
 
-import Home from './modules/home/index.js';
-import NotFound from './modules/notFound/index.js';
 import AsyncRoute from './modules/_common/AsyncRoute.js';
 
 render(
